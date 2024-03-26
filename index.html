@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>рецепти</title>
+  </head>
+  <body>
+    <header>
+      <h1>Рецепти</h1>
+      <p>Введіть назву страви та сайт видасть Вам інгрідієнти і інструкції.</p>
+    </header>
+    <main>
+      <section class="search">
+        <div>
+          <input type="search" id="inputSearch" placeholder="введіть назву страви">
+          <span id="error"></span>
+        </div>
+        <button id="find">Пошук</button>
+      </section>
+  
+      <section class="info">
+        <article class="info__article">
+          <h2 id="name" class=""></h2>
+          <article class="how_to_cook">
+            <p id="ingridients"><strong id="boldTextIngridients"></strong></p>
+            <p id="instructions"><strong id="boldTextInstructions"></strong></p>
+          </article>
+        </article>
+        <img src="./" alt="" id="img">
+      </section>
+    </main>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
